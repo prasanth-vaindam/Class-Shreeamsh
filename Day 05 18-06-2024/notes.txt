@@ -1,0 +1,16 @@
+Problems with inline styles
+internal styles using style tag
+what is a selector
+grouping of selectors
+
+NOTE: if two rules are applied to the same element then the one which comes last will be applied
+
+NOTE: Inline Styles will override Internal styles 
+which means Inline Styles have higher priority
+
+class and Id are global attributes, which means they can be applied on any tag or html element
+they are used to select the elements (or) target the specific elements
+
+In CSS rules for class selector are their will be a . in front of class name 
+e.g. 
+whereas for id slector we use # in front of the id name

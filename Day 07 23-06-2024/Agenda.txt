@@ -1,0 +1,16 @@
+Recap
+Formatting Tags : 
+-----------------------
+CSS BOX Model
+-------------
+
+
+Every Element is a Box - Width and Height can also be specified for them
+Border 
+Border Radius
+
+
+
+Block Vs Inline
+---------------
+Block Level Elements - Show Picture

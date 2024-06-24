@@ -1,0 +1,13 @@
+<h1> HyperText  </h1>
+
+
+- text with links to other Text(Document)
+
+HTML -> Hyper Text MarkUp Language -> We build Our webpages using HTML 
+
+HyperLink - Link or URL to a different page / or website
+Website is a group of webpages
+
+MarkUp -> marking an entity ( text or content)
+
+

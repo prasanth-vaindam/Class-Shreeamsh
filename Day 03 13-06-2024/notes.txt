@@ -1,0 +1,9 @@
+A - anchor tag
+href - hyperlink ref - reference
+comment
+
+self closing tags e.g. img tag 
+
+empty tags 
+<br> - break line
+<hr> - horizontal line
