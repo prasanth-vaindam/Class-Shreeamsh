@@ -13,4 +13,4 @@ they are used to select the elements (or) target the specific elements
 
 In CSS rules for class selector are their will be a . in front of class name 
 e.g. 
-whereas for id slector we use # in front of the id name
+where as for id slector we use # in front of the id name
