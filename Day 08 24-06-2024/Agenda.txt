@@ -1,0 +1,11 @@
+-----------------------
+CSS BOX Model
+-------------
+Block Level Elements
+------------------------
+Paragraph
+Div
+Heading
+Inline Elements:
+-----------------
+i, span
