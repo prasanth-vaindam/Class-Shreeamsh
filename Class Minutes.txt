@@ -1,0 +1,3 @@
+Date: 
+3 Divs side by side
+Float and Clear Properties 

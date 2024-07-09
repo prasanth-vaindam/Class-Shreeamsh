@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .box{
+            width:400px;
+            height: 100px;
+        }
+        .box1{
+            background-color: rgb(17, 255, 0);
+            padding: 10px;
+            box-sizing: content-box;
+            border: 10px solid orange;
+        }
+        .box2{
+            background-color: red;
+        }
+        .box3{
+            border: 10px solid orange;
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: rgb(234, 255, 0);
+        }
+           
+
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
