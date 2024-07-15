@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .parent-container {
+            color: green;
+            border: 2px solid currentColor;
+            height: 300px;
+        }
+
+        .box {
+            border: 2px solid rgb(59, 26, 190);
+            height: 75px;
+            margin: 10px;
+        }
+
+        .b1 {
+            color: black;
+            overflow: clip;
+            overflow-clip-margin: 10px;
+        }
+
+        .b2 {
+            /* width: 100px; */
+            color: rgb(169, 9, 9);
+            overflow:scroll;
+            /* max-width: 120px; */
+        }
+
+        .b3 {
+            color: rgb(229, 239, 91);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+
+        <!-- <div class="box b1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatem aliquam consequuntur nemo fuga pariatur iure! Eaque quas, similique earum quibusdam cum vero enim cupiditate quo facere, repellendus necessitatibus minima!</div> -->
+        <div class="box b1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ad esse nemo at fuga dignissimos labore consequuntur ipsa quibusdam eligendi fugit, doloremque, laboriosam veniam. Corrupti nobis magnam hic cupiditate. Quidem!   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero fuga dolorem neque corrupti blanditiis facere aliquam inventore! Temporibus neque ipsa facilis recusandae libero vel consequatur a qui architecto odit. loreessitatibus minima!</div>
+        <div class="box b2">Culpa, excepturi!</div>
+        <div class="box b3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dolore possimus
+            suscipit voluptates praesentium! Nulla molestias a ducimus suscipit accusamus laudantium error! Quaerat,
+            nesciunt quis. Vero magnam facere officiis labore?</div>
+    </div>
+</body>
+
+</html>
