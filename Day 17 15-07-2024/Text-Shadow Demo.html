@@ -15,7 +15,7 @@
         }
 
         .container {
-            color: gray;
+            color: skyblue;
 
             background-color: black;
             display: flex;
@@ -25,19 +25,51 @@
             height: 100vh;
         }
 
-        h1 {
-            font-family: "Poppins", sans-serif;
+        h1:hover {
+            color: whitesmoke;
+            font-family: "Poppins";
             text-transform: uppercase;
             font-weight: normal;
             font-size: 32px;
             letter-spacing: 3px;
+            text-shadow: 0px 0px 10px skyblue,
+                0px 0px 20px pink,
+                0px 0px 30px purple,
+                0px 0px 40px green,
+                0px 0px 50px red,
+                0px 0px 60px orange,
+                0px 0px 70px yellow;
+            font-size: 80px;
+        }
+
+        h1 {
+            font-family: "Poppins";
+            text-transform: uppercase;
+            font-weight: normal;
+            letter-spacing: 3px;
+            transition: ease-in 2s;
+            font-size: 50px;
+        }
+
+        h1:hover span:nth-child(1) {
+            margin-right: 10px;
+            content: ;
+        }
+
+        h1:hover span:nth-child(1)::after {
+            content: "'";
+            margin-left: ;
+        }
+
+        h1:hover span:nth-child(2) {
+            margin-left: 20px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>impossible</h1>
+        <h1><span>i</span>m<span>possible </span></h1>
 
     </div>
 </body>
