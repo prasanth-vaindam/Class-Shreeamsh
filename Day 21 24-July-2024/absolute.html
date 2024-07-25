@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion Demo - Absolute</title>
+    <style>
+        .father {
+            position: relative;
+            border: 2px solid green;
+            margin: 10px;
+        }
+
+        .box {
+            width: 80vw;
+            height: 100px;
+            margin: 5px;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        .box:first-child {
+            transition: all 1s linear;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box:nth-child(2) {
+            /* z-index: 100; */
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            /* margin: 0px; */
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: all 1s linear;
+        }
+        .box:nth-child(1):hover + .box:nth-child(2){
+            visibility: visible;
+        }
+
+        .box:last-child {
+            background-color: yellow;
+        }
+
+        .great-grand-father {
+            position: relative;
+            border: 2px solid red;
+            margin: 10px;
+        }
+        
+        .grand-father{
+            position: relative;
+            border: 2px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body class="great-grand-father">
+    <div class="grand-father">
+
+        <div class="father">
+            <div class="box">nthchild one Toys.aidsfkjskdjkfdslhkdsjfhkjdshfdsjfhjsdgfdksehfksdfkjhds</div>
+            <div class="box"><button>Save</button></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+
+</html>

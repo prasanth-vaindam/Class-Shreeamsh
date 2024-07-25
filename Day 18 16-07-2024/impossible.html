@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: black;
+            justify-content: center;
+        }
+
+        h1 {
+            color: gray;
+            letter-spacing: 2px;
+
+        }
+
+        h1:hover {
+            /* color: white; */
+            text-shadow: 0px 0px 10px white, 0px 0px 100px white;
+
+        }
+
+        h1:hover span:nth-child(1) {
+            color: white;
+            margin-right: 10px;
+        }
+
+        h1:hover span:nth-child(1)::after {
+            content: "'";
+        }
+
+        h1:hover span:nth-child(2) {
+            color: white;
+            margin-left: 10px;
+            /* color: red; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>
+            <span>I</span>M<span>POSSIBLE</span>
+        </h1>
+    </div>
+    <h2>GOD</h2>
+</body>
+
+</html>

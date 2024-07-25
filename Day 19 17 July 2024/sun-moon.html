@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            border-radius: 50px;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        .sky{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+        .sun{
+            background-color: yellow;
+        }
+        .sun:hover{
+            box-shadow: 0px 0px 100px 10px yellow;
+        }
+        .moon{
+            background-color: white;
+        }
+        .moon:hover{
+            box-shadow: inset 0px 0px 50px rgb(236, 232, 9)
+            , 0px 0px 10px 10px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        <div class="circle sun"></div>
+        <div class="circle moon"></div>
+    </div>
+</body>
+</html>

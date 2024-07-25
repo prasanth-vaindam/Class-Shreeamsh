@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion</title>
+    <style>
+        .divison {
+            position: static;
+            top: 10px;
+            background-color: brown;
+            padding: 20px;
+            width: 250px;
+            margin: 5px;
+            /* margin-left: 115px; */
+            /* height: 200px; */
+        }
+
+        .Relative {
+            z-index: 11;
+            position: relative;
+            top: 50px;
+            /* left: 50px; */
+            /* right: 50px; */
+            background-color: brown;
+            padding: 20px;
+            width: 250px;
+            margin: 5px;
+            /* margin-left: 115px; */
+            /* opacity: 0.5; */
+            /* height: 200px; */
+        }
+
+        .bottomBox {
+            bottom: 50px;
+            position: relative;
+            z-index: 10;
+            background-color: rgb(71, 165, 42);
+            padding: 20px;
+            width: 300px;
+            margin: 5px;
+            /* height: 200px; */
+        }
+
+        * {
+            margin: 0px;
+            padding: 0;
+        }
+
+        body {
+            border: 3px solid Yellow;
+        }
+
+        .watsappBox {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            margin: 10px;
+            color: white;
+            background-color: green;
+            padding: 8px;
+            width: 32px;
+            box-sizing: border-box;
+            height: 32px;
+            border-radius: 50px;
+            /* vertical-align: middle; */
+
+
+        }
+
+        .bigDiv {
+            /* position: relative; */
+            /* z-index: 111; */
+            margin: 10px;
+            height: 1000px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divison"></div>
+    <div class="divison2"></div>
+    <div class="divison">Normal - Static</div>
+    <div class="divison2"></div>
+    <div class="Relative">Relative Box</div>
+    <div class="bottomBox">Bottom Box</div>
+    <div class="watsappBox">O</div>
+    <div class="bigDiv"></div>
+</body>
+
+</html>
