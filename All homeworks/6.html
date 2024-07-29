@@ -31,6 +31,11 @@
             background-color: orange;
         }
 
+        .circle:first-child:hover+.circle:last-child {
+            box-shadow: inset 0px 0px 100px black;
+            transition: box-shadow ease 1s;
+        }
+
         .circle:nth-child(2) {
             background-color: white;
         }
