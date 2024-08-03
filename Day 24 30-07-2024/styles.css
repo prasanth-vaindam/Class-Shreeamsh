@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container-header{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    
+}
+#logo img{
+    /* margin-left: 0; */
+    /* width: 300px; */
+    height: 100px;
+    border: 3px dotted gold;
+    border-radius: 10px;
+}
+#pageTitle{
+    font-size: 32px;
+    padding: 10px;
+    margin: auto;
+}
+
+.flex-image-container{
+    display: flex;
+    align-items: center;
+    height: 44vh;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: yellow;
+}
+.tile h1{
+    color: white;
+}
+.tile{
+    /* border: 2px solid gray; */
+    /* width: 100%; */
+    height: 33%;
+    /* background-image: url("aham_brahmasmi.jpg"); */
+    
+}
+/* .flex-image-container img{
+     
+     
+} */
+.item{
+    height: 150px;
+    /* flex-grow: 1;
+    flex-shrink: 0; */
+    /* flex-basis: 150px; */
+}

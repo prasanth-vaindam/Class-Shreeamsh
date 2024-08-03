@@ -1,0 +1,20 @@
+Flex Box
+
+display:flex;
+flex-direction: column-reverse;
+flex-direction: items in the container are aligned
+row - default
+column - along the cross axis
+to start from the flex-end - row reverese
+
+flex-wrap: nowrap; default - they will be in the same line
+ row-gap: 25px;
+            column-gap: 10px;
+            /* gap: 10px 20px; */
+
+Doubt:
+What is the difference between end and flex-end
+start and flex-start
+
+is their a way I can streh a item horizontal
+

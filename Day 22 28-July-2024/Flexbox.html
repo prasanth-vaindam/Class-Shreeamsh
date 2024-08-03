@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        .flex-container {
+            background-color: skyblue;
+            border: 2px solid rgb(12, 12, 12);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* overflow: scroll; */
+            /* flex-shrink: 0; */
+            gap: 10px;
+            height: 80vh;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* column-gap: 10px;
+            row-gap:10px; */
+            /* gap: 10px; */
+            flex-wrap: wrap;
+        }
+
+        .box {
+
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: rgb(36, 161, 207);
+            /* margin: 10px; */
+            width: 100px;
+            height: 100px;
+        }
+
+        .box:first-child {
+            /* order: 0; */
+            /* align-self: self-start; */
+            background-color: rgb(255, 251, 0);
+            /* border-radius: 50px; */
+        }
+        
+        .box:nth-child(2) {
+            /* order: 5; */
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .box:nth-child(3) {
+            /* order: -1;
+            order: 0; */
+            background-color: rgb(53, 184, 24);
+        }
+        
+        .box:last-child {
+            flex-grow: 1;
+            /* order: -1;
+            order: 0; */
+            background-color: rgb(254, 254, 255);
+            /* border-radius: 50px; */
+            /* align-self: flex-end; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <div class="box">ravi</div>
+        <div class="box">sri</div>
+        <div class="box">giri</div>
+        <!-- <div class="box">janu</div> -->
+        <!-- <div class="box"></div>
+        <div class="box"></div> -->
+    </div>
+
+
+</body>
+
+</html>

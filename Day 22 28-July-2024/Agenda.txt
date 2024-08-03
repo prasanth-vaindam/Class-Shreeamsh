@@ -1,0 +1,23 @@
+on item level properites 
+what is the difference between 
+self-end vs flex-end
+
+There is no self-end value in standard CSS for flexbox alignment.
+-------------------------------
+
+container level properties:
+
+- align items - container
+justify-content - align along the main axis
+flex-direction - change the direction from main axis to cross axis
+
+flex-wrap: wrap > overflow
+gap, column gap, rowgap
+
+------------------
+order - it is a item level property
+align-self
+flex-grow
+flex-shrink
+flex-basis
+
