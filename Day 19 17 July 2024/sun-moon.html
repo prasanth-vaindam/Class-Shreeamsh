@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .circle{
+        .circle {
             border-radius: 50px;
             background-color: green;
             width: 100px;
             height: 100px;
         }
-        .sky{
+
+        .sky {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -20,25 +22,32 @@
             height: 500px;
             background-color: skyblue;
         }
-        .sun{
+
+        .sun {
             background-color: yellow;
         }
-        .sun:hover{
+
+        .sun:hover {
             box-shadow: 0px 0px 100px 10px yellow;
+            transition: 1s;
         }
-        .moon{
+
+        .moon {
             background-color: white;
         }
-        .moon:hover{
-            box-shadow: inset 0px 0px 50px rgb(236, 232, 9)
-            , 0px 0px 10px 10px white;
+
+        .moon:hover {
+            box-shadow: inset 0px 0px 50px rgb(236, 232, 9), 0px 0px 10px 10px white;
+            transition: 1s;
         }
     </style>
 </head>
+
 <body>
     <div class="sky">
         <div class="circle sun"></div>
         <div class="circle moon"></div>
     </div>
 </body>
+
 </html>
