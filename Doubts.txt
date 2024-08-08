@@ -1,3 +1,6 @@
       7/29/24:      
 What is the Difference between Flex-end and end?
 What is the Difference between Flex-start and start?
+
+Cursor : pointer
+Cursor : crosshair

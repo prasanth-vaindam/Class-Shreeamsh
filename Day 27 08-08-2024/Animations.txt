@@ -1,0 +1,4 @@
+Where are Animations used in Real
+On Page Load - Loading Animations
+How do they Work ?
+

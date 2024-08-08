@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations Demo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation: complete-360 4s linear 3;
+        }
+
+        @keyframes complete-360 {
+            0%{
+                transform: translateX(0px);
+                border-radius: 0px;
+            }
+            25%{
+                transform: translateX(250px);
+            }
+            50%{
+                transform: translate(250px,250px);
+            }
+            75%{
+                transform: translateY(250px);
+            }
+            100%{
+                transform: translate(0px, 0px);
+                border-radius: 50px;
+            }
+            
+        }
+
+        @keyframes move-right {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(150px);
+
+            }
+            100% {
+                transform: translateX(0);
+
+            }
+        }
+
+        @keyframes example {
+            from {
+                background-color: red;
+                width: 10px;
+                height: 10px;
+            }
+
+            to {
+                background-color: yellow;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
