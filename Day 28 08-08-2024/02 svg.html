@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Path Animation</title>
+    <style>
+        /* CSS code for animation */
+        svg {
+            width: 100px;
+            height: 100px;
+        }
+
+        .svg-path {
+            stroke: black;
+            stroke-width: 2;
+            fill: none;
+            animation: draw 2s forwards;
+        }
+
+        @keyframes draw {
+            from {
+                stroke-dasharray: 0 100;
+            }
+
+            to {
+                stroke-dasharray: 100 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg viewBox="0 0 100 100">
+        <path class="svg-path" d="M10 10 H 90 V 90 H 10 L 10 10" />
+    </svg>
+</body>
+
+</html>

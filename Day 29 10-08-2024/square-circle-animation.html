@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square to Circle Animation</title>
+    <style>
+        .profile-pic {
+            perspective: 1500px;
+        }
+
+        /* .profile-pic:hover>.box {
+            transform: rotateX(10deg) rotateY(-18deg) rotateZ(3deg);
+            transition: all 1s linear;
+            box-shadow: 0px 0px 30px gray;
+            border-radius: 15px;
+
+        } */
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: load 4s linear 3s 30 alternate-reverse forwards;
+        }
+
+
+
+        @keyframes load {
+            100% {
+                transform: rotate(360deg) ;
+                border-radius: 50px;
+                background-color: red;
+                /* width: 50px;
+                height: 50px; */
+            }
+        }
+
+        img {
+            border-radius: 10px;
+            transform: rotateX(10deg) rotateY(-18deg) rotateZ(3deg);
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        img:hover {
+            transform: rotateX(10deg) rotateY(18deg) rotateZ(0deg);
+            transition: all 1s linear;
+
+        }
+
+        /* .box:hover{
+            transform: scale(1.5) rotateZ('10deg');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-pic">
+        <div class="box"></div>
+        <!-- <img src="owl.jpeg" width="350px" height="200px"> -->
+    </div>
+</body>
+
+</html>

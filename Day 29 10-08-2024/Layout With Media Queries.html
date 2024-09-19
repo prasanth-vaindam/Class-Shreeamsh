@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+
+        article {
+            width: 40%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-inline: auto;
+            margin-top: 20px;
+            background-color: aquamarine;
+        }
+
+        @media screen and (max-width:600px) {
+            main {
+                flex-direction: column;
+            }
+
+            article {
+                width: 100%;
+                background-color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt cupiditate, sequi id reprehenderit
+            nihil ullam sapiente, distinctio eius a mollitia porro voluptates maiores iste, odio dolore quod molestiae
+            placeat in.
+        </article>
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt cupiditate, sequi id reprehenderit
+            nihil ullam sapiente, distinctio eius a mollitia porro voluptates maiores iste, odio dolore quod molestiae
+            placeat in.
+        </article>
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt cupiditate, sequi id reprehenderit
+            nihil ullam sapiente, distinctio eius a mollitia porro voluptates maiores iste, odio dolore quod molestiae
+            placeat in.
+        </article>
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt cupiditate, sequi id reprehenderit
+            nihil ullam sapiente, distinctio eius a mollitia porro voluptates maiores iste, odio dolore quod molestiae
+            placeat in.
+        </article>
+
+    </main>
+</body>
+
+</html>

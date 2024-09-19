@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Text Animation</title>
+    <style>
+        svg {
+            width: 300px;
+            height: 100px;
+        }
+
+        .svg-path {
+            stroke: black;
+            stroke-width: 2;
+            fill: none;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: drawText 5s forwards;
+        }
+
+        @keyframes drawText {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg viewBox="0 0 500 100">
+        <path class="svg-path"
+            d="M 10 40 Q 10 10 50 10 Q 90 10 90 40 Q 90 70 50 70 Q 10 70 10 40 M 100 10 L 100 70 M 110 10 L 140 10 L 140 40 Q 140 70 110 70 L 110 40 M 160 10 L 160 70 M 200 10 L 180 10 Q 160 10 160 40 Q 160 70 180 70 L 200 70 M 220 10 L 220 70 M 230 10 L 230 40 Q 230 70 270 70 Q 310 70 310 40 Q 310 10 270 10 Q 230 10 230 40" />
+    </svg>
+</body>
+
+</html>

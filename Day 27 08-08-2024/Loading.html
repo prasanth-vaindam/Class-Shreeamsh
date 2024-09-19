@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        .box {
+            width: 125px;
+            height: 125px;
+            border: 15px solid rgb(255, 255, 255);
+            border-top: 15px dotted black;
+            border-right: 15px dotted black;
+            border-bottom: 15px dotted black;
+            border-radius: 50%;
+            transform: rotate(90deg);
+            transform: rotate(180deg);
+            transform: rotate(270deg);
+            transform: rotate(0deg);
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

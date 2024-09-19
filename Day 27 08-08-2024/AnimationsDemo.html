@@ -17,18 +17,23 @@
             background-color: red;
             width: 100px;
             height: 100px;
-            animation: complete-360 4s linear 3;
+            animation: complete-360 4s linear;
+            animation-fill-mode: forwards;
         }
 
         @keyframes complete-360 {
-            0%{
+            0% {
                 transform: translateX(0px);
                 border-radius: 0px;
             }
-            25%{
+
+            100% {
                 transform: translateX(250px);
+                border-radius: 50px;
+                background-color: yellow;
             }
-            50%{
+
+            /* 50%{
                 transform: translate(250px,250px);
             }
             75%{
@@ -36,9 +41,9 @@
             }
             100%{
                 transform: translate(0px, 0px);
-                border-radius: 50px;
-            }
-            
+               
+            } */
+
         }
 
         @keyframes move-right {
@@ -50,6 +55,7 @@
                 transform: translateX(150px);
 
             }
+
             100% {
                 transform: translateX(0);
 
